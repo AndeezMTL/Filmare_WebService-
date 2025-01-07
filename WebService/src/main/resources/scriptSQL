@@ -1,0 +1,73 @@
+
+
+Création de la base de donnée filmare_db_1
+#CREATE DATABASE filmare_db_1;
+
+
+---------------- SCRIPT POUR LA TABLE USERS --------------------
+
+
+
+DROP TABLE if exists users;
+DROP TABLE if exists videos;
+
+
+create table users (
+	idUsers INT,
+	username VARCHAR(50),
+	password VARCHAR(50),
+	name VARCHAR(50),
+	age INT,
+	gender VARCHAR(50)
+);
+insert into users (idUsers, username, password, name, age, gender) values (1, 'jedards0', 'dM3&jA@za).1qD8', 'Jeralee Edards', 57, 'Polygender');
+insert into users (idUsers, username, password, name, age, gender) values (2, 'vdart1', 'uC3`lk''Nx/}n/{)', 'Vincenz Dart', 42, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (3, 'rcandlish2', 'kD2&''L=3', 'Rowland Candlish', 110, 'Genderfluid');
+insert into users (idUsers, username, password, name, age, gender) values (4, 'emccuthais3', 'rH7,u_HuCE"9=<o', 'Elmo McCuthais', 113, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (5, 'mgarrat4', 'tG1}13Xa1+', 'Merilyn Garrat', 119, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (6, 'mcolnet5', 'pS1>SN~@i1}rfK', 'Marena Colnet', 54, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (7, 'sgraith6', 'bO2~0uot.P+LtlqP', 'Sonnnie Graith', 89, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (8, 'akleinstub7', 'hH1!h/H=u)Bb', 'Amalee Kleinstub', 52, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (9, 'stern8', 'gD4"Zxaq', 'Saxon Tern', 93, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (10, 'mtomei9', 'aR1}V1uU4WR+Y%YN', 'Margot Tomei', 102, 'Agender');
+insert into users (idUsers, username, password, name, age, gender) values (11, 'slavala', 'xX0>GWyVcz', 'Shaun Laval', 43, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (12, 'dtordiffeb', 'bX6?~U+$zKBtp.', 'Danya Tordiffe', 72, 'Genderqueer');
+insert into users (idUsers, username, password, name, age, gender) values (13, 'dgarvaghc', 'eG1?VSSWL&q.''gJl', 'Drusie Garvagh', 60, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (14, 'ubarringtond', 'pY4,A5$3rkstf$$', 'Umeko Barrington', 61, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (15, 'kfranee', 'bG6$vJ!V%ceSo=', 'Keefe Frane', 60, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (16, 'jbanglef', 'uV8=Yc_Uq!|1BK', 'Jorey Bangle', 53, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (17, 'amcpeckg', 'fQ7@EJtOw8I', 'Alfy McPeck', 82, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (18, 'tshordh', 'sP6?}_,O3pCd_q=$', 'Tabby Shord', 37, 'Female');
+insert into users (idUsers, username, password, name, age, gender) values (19, 'nmathesi', 'bY4.#G|4', 'Neddy Mathes', 57, 'Male');
+insert into users (idUsers, username, password, name, age, gender) values (20, 'jcammomilej', 'tO1#2L3t#)Ipe(u', 'Judas Cammomile', 28, 'Male');
+
+----------------- SCRIPT POUR LA TABLE VIDEOS -----------------------------------------
+
+
+create table videos (
+	idVideos INT,
+	name VARCHAR(50),
+	description TEXT,
+	lienVideo VARCHAR(1000)
+);
+insert into videos (idVideos, name, description, lienVideo) values (1, 'Issiah Freezor', 'Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'https://amazon.co.jp/elit/proin/interdum.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (2, 'Ashly Gately', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.', 'http://behance.net/arcu/libero/rutrum/ac/lobortis.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (3, 'Gracie Mathivat', 'Vivamus tortor. Duis mattis egestas metus.', 'https://angelfire.com/euismod/scelerisque/quam/turpis/adipiscing.js');
+insert into videos (idVideos, name, description, lienVideo) values (4, 'Euphemia Imlock', 'Donec ut dolor.', 'http://ca.gov/nulla/mollis/molestie/lorem/quisque/ut.json');
+insert into videos (idVideos, name, description, lienVideo) values (5, 'Mitchael Pain', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://mayoclinic.com/feugiat.xml');
+insert into videos (idVideos, name, description, lienVideo) values (6, 'Ganny Weaving', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.', 'http://amazonaws.com/eget/massa/tempor.jsp');
+insert into videos (idVideos, name, description, lienVideo) values (7, 'Edi Heinschke', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'https://psu.edu/imperdiet.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (8, 'Loralie Ernke', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.', 'http://senate.gov/quisque/arcu/libero/rutrum.xml');
+insert into videos (idVideos, name, description, lienVideo) values (9, 'Ev Girdwood', 'Aliquam quis turpis eget elit sodales scelerisque.', 'https://sphinn.com/felis.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (10, 'Katy Wrenn', 'Maecenas pulvinar lobortis est.', 'https://loc.gov/ac/tellus/semper/interdum/mauris/ullamcorper/purus.jsp');
+insert into videos (idVideos, name, description, lienVideo) values (11, 'Thornie Sollam', 'Aenean fermentum.', 'https://wikipedia.org/praesent/lectus/vestibulum/quam/sapien.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (12, 'Jacqui Yoakley', 'Curabitur in libero ut massa volutpat convallis.', 'http://alexa.com/faucibus.png');
+insert into videos (idVideos, name, description, lienVideo) values (13, 'Sonja Aggis', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.', 'http://creativecommons.org/vulputate/ut/ultrices.png');
+insert into videos (idVideos, name, description, lienVideo) values (14, 'Kerr Mercik', 'Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.', 'http://umich.edu/pede/morbi/porttitor/lorem/id/ligula/suspendisse.jpg');
+insert into videos (idVideos, name, description, lienVideo) values (15, 'Woodman McReynold', 'Integer non velit.', 'http://census.gov/etiam/vel/augue/vestibulum/rutrum/rutrum/neque.jpg');
+insert into videos (idVideos, name, description, lienVideo) values (16, 'Garrott O''Hagan', 'Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.', 'http://tripod.com/at/velit.xml');
+insert into videos (idVideos, name, description, lienVideo) values (17, 'Cecilia Hollyman', 'Phasellus sit amet erat.', 'http://imdb.com/pulvinar/sed.json');
+insert into videos (idVideos, name, description, lienVideo) values (18, 'Jaimie Rodda', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 'http://noaa.gov/etiam.jsp');
+insert into videos (idVideos, name, description, lienVideo) values (19, 'Kellsie Durtnell', 'Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.', 'http://imdb.com/sit/amet/nunc/viverra/dapibus/nulla/suscipit.aspx');
+insert into videos (idVideos, name, description, lienVideo) values (20, 'Vin Torbet', 'Vivamus tortor. Duis mattis egestas metus.', 'https://topsy.com/amet/eros/suspendisse/accumsan/tortor/quis/turpis.jsp');
+
